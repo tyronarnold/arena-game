@@ -1,5 +1,7 @@
 # Arena 1v1
 
+![Gameplay: the Warden standing between two pillars, with the health bars, win counter and radar showing](docs/screenshot.png)
+
 A small first-person arena shooter that runs in the browser. You are dropped into a single room with one opponent, the **Warden**, and the first to run out of health loses. The pillars in the room block line of sight and bullets, so use them as cover.
 
 Built with plain HTML, CSS and JavaScript, plus [Three.js](https://threejs.org/) for 3D rendering. There is no build step and nothing to install.
