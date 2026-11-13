@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arena — 1v1</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="hud">
+  <div id="banner">Arena 1v1</div>
+  <div id="score">Wardens beaten <span id="wins">0</span></div>
+  <div class="top">
+    <div class="plate" id="player-plate">
+      <div class="label">You</div>
+      <div class="who"><span>Operative</span><span id="player-hp" class="hp">100</span></div>
+      <div class="bar"><div id="player-fill" class="fill"></div></div>
+    </div>
+    <div class="plate enemy">
+      <div class="label">Opponent</div>
+      <div class="who"><span id="enemy-hp" class="hp">100</span><span>Warden</span></div>
+      <div class="bar"><div id="enemy-fill" class="fill"></div></div>
+    </div>
+  </div>
+  <div id="cross"></div>
+  <div id="hitmark"></div>
+  <div id="damage"></div>
+  <div id="pointer"></div>
+  <div id="warn">Incoming<div class="charge"><div id="charge-fill"></div></div></div>
+  <div id="radar-wrap">
+    <canvas id="radar" width="300" height="300"></canvas>
+    <div id="radar-info">Warden <span id="enemy-dist">--</span> m</div>
+  </div>
+  <div class="help">
+    <kbd>↑</kbd> <kbd>↓</kbd> move
+    <kbd>←</kbd> <kbd>→</kbd> turn
+    <kbd>Space</kbd> shoot
+  </div>
+</div>
+<div id="overlay">
+  <div class="card">
+    <div id="result"></div>
+    <h1 id="title">ARENA</h1>
+    <p id="blurb">One room. One opponent. Drop the Warden before it drops you. Cover breaks line of sight — use the pillars.</p>
+    <div class="keys">
+      <div><span>Move forward / back</span><span><kbd>↑</kbd> <kbd>↓</kbd></span></div>
+      <div><span>Turn left / right</span><span><kbd>←</kbd> <kbd>→</kbd></span></div>
+      <div><span>Shoot</span><span><kbd>Space</kbd></span></div>
+    </div>
+    <button id="start" type="button">Enter the arena</button>
+  </div>
+</div>
+<script src="https://unpkg.com/three@0.160.1/build/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
