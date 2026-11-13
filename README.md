@@ -15,13 +15,11 @@ Built with plain HTML, CSS and JavaScript, plus [Three.js](https://threejs.org/)
    ```
 2. Open `index.html` in a modern browser.
 
-   Or serve the folder locally, for example:
+   Or serve the folder locally with Python from the project folder:
    ```bash
-   npx serve .
-   # or
-   python -m http.server
+   python -m http.server 8765 --bind 127.0.0.1
    ```
-   Then open the address it prints.
+   Then open http://127.0.0.1:8765 in your browser. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to stop the server.
 
 You need an internet connection, because Three.js is loaded from a CDN (unpkg).
 
